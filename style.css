@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #805A6C;
+}
+
+body {
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6c4cc+0,d6c4cc+33,fad3d2+33,fad3d2+33,fad3d2+66,ffecad+66,ffecad+100 */
+  background: #d6c4cc;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6c4cc', endColorstr='#ffecad',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  height: 10vh;
+  background: #fff;
+}
+
+header .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .logo {
+  height: 100%;
+}
+
+header img {
+  height: 100%;
+}
+
+header .hours, header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .hours i, header .phone i {
+  margin-right: 10px;
+}
+
+header .phone a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+main {
+  height: 85vh;
+}
+
+footer {
+  font-size: 12px;
+  height: 5vh;
+  background: white;
+}
+
+footer .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
