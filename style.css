@@ -28,20 +28,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
   height: 10vh;
   background: #fff;
-}
-
-header .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 header .logo {
@@ -52,20 +46,40 @@ header img {
   height: 100%;
 }
 
-header .hours, header .phone {
+.data {
+  height: 20vh;
+}
+
+.data .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header .hours i, header .phone i {
-  margin-right: 10px;
+.data .hours, .data .phone, .data .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header .phone a {
+.data .hours i, .data .phone i, .data .address i {
+  margin-bottom: 10px;
+}
+
+.data .phone a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +90,28 @@ header .phone a {
 }
 
 main {
-  height: 85vh;
+  height: 65vh;
+}
+
+main .text {
+  width: 60%;
+}
+
+main .text p {
+  margin: 10px;
+}
+
+main .img {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {

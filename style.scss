@@ -31,25 +31,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6c4cc', end
     margin: 0 auto;
     height: 100%;
     display: flex;
+    align-items: center
 }
 
     
 header{
     height: 10vh;
     background: #fff;
-    .wrapper{
-        align-items: center;justify-content: space-evenly;
-        }
+   
     .logo{
         height: 100%;}
         img{
             height: 100%;
         }
-        .hours, .phone, 
+    
+      
+    }
+
+    .data{
+        height: 20vh;
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hours, .phone, .address
         {
-            display: flex;align-items: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             i{
-                margin-right:10px ;
+                margin-bottom:10px ;
             }
 
         }
@@ -58,11 +70,26 @@ header{
             text-decoration: none;
 
         }
-      
     }
    
     main{
-        height: 85vh;
+        height: 65vh;
+
+        .text{
+            width: 60%;
+            p{
+                margin: 10px;
+            }
+
+        }
+        .img{
+            width: 40%;
+
+
+            display: flex;align-items: center;justify-content: center;
+
+
+        }
     }
 footer{
     .wrapper{
