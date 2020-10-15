@@ -10,6 +10,14 @@
 
 body {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6c4cc+0,d6c4cc+33,fad3d2+33,fad3d2+33,fad3d2+66,ffecad+66,ffecad+100 */
   background: #d6c4cc;
   /* Old browsers */
@@ -17,7 +25,7 @@ body {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6c4cc', endColorstr='#ffecad',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6c4cc', endColorstr='#ffecad', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -46,63 +54,49 @@ header img {
   height: 100%;
 }
 
-.data {
-  height: 20vh;
+main {
+  min-height: 85vh;
 }
 
-.data .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main a {
+  text-decoration: none;
 }
 
-.data .hours, .data .phone, .data .address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main .wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.data .hours i, .data .phone i, .data .address i {
-  margin-bottom: 10px;
-}
-
-.data .phone a {
+main .wrapper .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
 }
 
-main {
-  height: 65vh;
-}
-
-main .text {
-  width: 60%;
-}
-
-main .text p {
-  margin: 10px;
-}
-
-main .img {
-  width: 40%;
+main .wrapper .info .box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +108,32 @@ main .img {
           justify-content: center;
 }
 
+main .wrapper .info .box i {
+  margin-bottom: 20px;
+}
+
+main .wrapper .content {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+main .wrapper .content .text {
+  text-align: justify;
+}
+
+main .wrapper .content .text p {
+  margin: 10px 0;
+}
+
 footer {
-  font-size: 12px;
   height: 5vh;
+  font-size: 12px;
   background: white;
 }
 
@@ -127,5 +144,28 @@ footer .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  body {
+    height: auto;
+  }
+  main .wrapper {
+    font-size: 14px;
+  }
+  main .wrapper .info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .wrapper .content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 14px;
+  }
+  main .wrapper .content img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

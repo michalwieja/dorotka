@@ -1,32 +1,42 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 $primary-color: #805A6C;
 $yellow: #FEC70D;
 $pink: #F07B79;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-
-*{
-    margin: 0;padding: 0;box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: $primary-color;
-
 }
 
-body{
+body {
     height: 100vh;
-    
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6c4cc+0,d6c4cc+33,fad3d2+33,fad3d2+33,fad3d2+66,ffecad+66,ffecad+100 */
-background: #d6c4cc; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #d6c4cc 0%,#d6c4cc 33%,#fad3d2 33%,#fad3d2 33%,#fad3d2 66%,#ffecad 66%,#ffecad 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #d6c4cc 0%,#d6c4cc 33%,#fad3d2 33%,#fad3d2 33%,#fad3d2 66%,#ffecad 66%,#ffecad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6c4cc', endColorstr='#ffecad',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6c4cc+0,d6c4cc+33,fad3d2+33,fad3d2+33,fad3d2+66,ffecad+66,ffecad+100 */
+    background: #d6c4cc;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6c4cc', endColorstr='#ffecad', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+
 
 }
 
-.wrapper{
+.wrapper {
     width: 80%;
     margin: 0 auto;
     height: 100%;
@@ -34,68 +44,116 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6c4cc', end
     align-items: center
 }
 
-    
-header{
+
+header {
     height: 10vh;
     background: #fff;
-   
-    .logo{
-        height: 100%;}
-        img{
-            height: 100%;
-        }
-    
-      
+
+    .logo {
+        height: 100%;
     }
 
-    .data{
-        height: 20vh;
-        .wrapper{
+    img {
+        height: 100%;
+    }
+}
+
+main {
+    min-height: 85vh;
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .wrapper {
+        flex-direction: column;
+
+        .info {
             display: flex;
+            order: 1;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
+            margin: 20px 0;
+
+            .box {
+                flex-direction: column;
+                flex: 1 1 350px;
+                margin: 20px 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+
+                i {
+                    margin-bottom: 20px;
+
+
+                }
+
+            }
         }
-        .hours, .phone, .address
-        {
+
+        .content {
+            order: 2;
             display: flex;
-            align-items: center;
-            flex-direction: column;
-            i{
-                margin-bottom:10px ;
+            margin-top: 50px;
+            font-size: 20px;
+
+            .text {
+                text-align: justify;
+
+                p {
+                    margin: 10px 0;
+                }
             }
-
-        }
-        .phone a{
-            display: flex;align-items: center;
-            text-decoration: none;
-
         }
     }
-   
-    main{
-        height: 65vh;
 
-        .text{
-            width: 60%;
-            p{
-                margin: 10px;
-            }
-
-        }
-        .img{
-            width: 40%;
+}
 
 
-            display: flex;align-items: center;justify-content: center;
 
-
-        }
-    }
-footer{
-    .wrapper{
-        align-items: center;justify-content: center;
-    }
-    font-size: 12px;
+footer {
     height: 5vh;
+
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    font-size: 12px;
     background:white;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        height: auto;
+    }
+
+    main .wrapper {
+        font-size: 14px;
+
+        .info {
+            order: 2;
+
+        }
+
+        .content {
+            order: 1;
+            font-size: 14px;
+
+
+            img {
+                display: none;
+            }
+
+        }
+    }
+
 }
