@@ -17,7 +17,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6c4cc+0,d6c4cc+33,fad3d2+33,fad3d2+33,fad3d2+66,ffecad+66,ffecad+100 */
   background: #d6c4cc;
   /* Old browsers */
