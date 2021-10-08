@@ -13,7 +13,7 @@ $pink: #F07B79;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   // overflow: hidden;
@@ -52,7 +52,7 @@ header {
 }
 
 main {
-  min-height: 80vh;
+  flex: 1;
 
   a {
     text-decoration: none;
@@ -103,28 +103,45 @@ main {
 }
 
 footer {
-  height: 10vh;
+  font-size: 12px;
+  background: white;
+  padding: 20px;
 
   .wrapper {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 
-    .img{
-      height: 100%;
-      img{
+    .img {
+      height: 100px;
+
+      img {
         height: 100%;
       }
     }
   }
-
-  font-size: 12px;
-  background: white;
 }
 
 @media (max-width: 1024px) {
   body {
     height: auto;
+  }
+
+  footer {
+    .wrapper {
+      gap: 0;
+ 
+      .img {
+        height: auto;
+        width: 100%;
+  
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
   }
 
   main .wrapper {
