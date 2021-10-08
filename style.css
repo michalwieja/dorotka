@@ -2,29 +2,25 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   color: #805A6C;
 }
 
 body {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6c4cc+0,d6c4cc+33,fad3d2+33,fad3d2+33,fad3d2+66,ffecad+66,ffecad+100 */
   background: #d6c4cc;
   /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
   /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #d6c4cc 0%, #d6c4cc 33%, #fad3d2 33%, #fad3d2 33%, #fad3d2 66%, #ffecad 66%, #ffecad 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6c4cc', endColorstr='#ffecad', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d6c4cc", endColorstr="#ffecad", GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -32,139 +28,98 @@ body {
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 header {
   height: 10vh;
   background: #fff;
 }
-
 header .logo {
   height: 100%;
 }
-
 header img {
   height: 100%;
 }
 
 main {
-  min-height: 85vh;
+  min-height: 80vh;
 }
-
 main a {
   text-decoration: none;
 }
-
 main .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main .wrapper .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  order: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin: 20px 0;
 }
-
 main .wrapper .info .box {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 350px;
-          flex: 1 1 350px;
+  flex-direction: column;
+  flex: 1 1 350px;
   margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 main .wrapper .info .box i {
   margin-bottom: 20px;
 }
-
 main .wrapper .content {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  order: 2;
   display: flex;
   margin-top: 50px;
   font-size: 20px;
 }
-
 main .wrapper .content .text {
   text-align: justify;
 }
-
 main .wrapper .content .text p {
   margin: 10px 0;
 }
 
 footer {
-  height: 5vh;
+  height: 10vh;
   font-size: 12px;
   background: white;
 }
-
 footer .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+footer .wrapper .img {
+  height: 100%;
+}
+footer .wrapper .img img {
+  height: 100%;
 }
 
 @media (max-width: 1024px) {
   body {
     height: auto;
   }
+
   main .wrapper {
     font-size: 14px;
   }
   main .wrapper .info {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   main .wrapper .content {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     font-size: 14px;
   }
   main .wrapper .content img {
     display: none;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
